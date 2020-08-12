@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../public/lib/jquery-3.3.1.js"></script>
+  <script src="../public/lib/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+  <script src="../public/js/index.js"></script>
+</head>
+<body>
+  <div class="container">
+    {{each comments}}
+    <div class="alert alert-success" role="alert">
+      {{$value.name}} {{$value.comment}} {{$value.detaTime}}
+    </div>
+    {{/each}}
+    <button type="button" id="btn" class="btn btn-primary">提交评论</button>
+  </div>
+</body>
+</html>

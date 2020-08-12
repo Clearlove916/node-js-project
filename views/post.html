@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../public/lib/jquery-3.3.1.js"></script>
+  <script src="../public/lib/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <form action="/formput" method="GET">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Your Name</label>
+        <input name="name" class="form-control" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Your Comment</label>
+        <textarea name="comment" class="form-control" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
